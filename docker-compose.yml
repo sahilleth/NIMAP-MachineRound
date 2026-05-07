@@ -7,7 +7,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - app_data:/app/app/data
+      - app_data:/app/data
     networks:
       - monitoring
     environment:

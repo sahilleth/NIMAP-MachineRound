@@ -4,8 +4,8 @@ from pathlib import Path
 from typing import List, Dict, Optional
 from datetime import datetime
 
-BASE_DIR = Path(__file__).resolve().parent
-datafolder = os.path.join(BASE_DIR, "data")
+# Use absolute path for data directory
+datafolder = "/app/data"
 datasource = os.path.join(datafolder, "users.json")
 
 class UserNotFoundError(Exception):
